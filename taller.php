@@ -9,9 +9,10 @@
       <?php include_once 'includes/nav.php'; ?>
     </header>
     <div class="contenedor">
-      <aside class="">
-      </aside>
       <section>
+        <img src="" alt="">
+        <h1></h1>
+        <p></p>
           <?php
             include_once 'consultas/conexion.php';
 
@@ -58,6 +59,22 @@
           <img src="" alt="">
         </div>
       </section>
+      <section>
+        <div class="comentario">
+          <h3>Usuario</h3>
+          <form class="" action="consultas/comentar.html" method="post">
+            <input type="text" name="" value="Agrega ttu comentario...">
+            <input type="submit" class="btn btn-primary" name="" value="Comentar">
+          </form>
+        </div>
+        <div class="comentario">
+          <h3>Usuario</h3>
+          <p>Comentario</p>
+          <h5>Fecha</h5>
+        </div>
+      </section>
     </div>
   </body>
 </html>
+
+<input type="submit" class="btn btn-primary" name="" value="">

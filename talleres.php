@@ -13,7 +13,7 @@
         <img src="" alt="">
         <h2></h2>
         <p></p>
-        <a href="#" class="btn btn-primary">Ver más</a>
+        <a href="taller.php" class="btn btn-primary">Ver más</a>
       </section>
     </div>
   </body>
