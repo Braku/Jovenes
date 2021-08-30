@@ -115,3 +115,8 @@ body, html {
   margin: 5%  10%;
   width: 80%;
 }
+
+.nav-link{
+	border: 1px;
+	border-color: #f28f38
+}
