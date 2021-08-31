@@ -1,0 +1,32 @@
+/* .colorimetria{
+ azul: #1D3E85 #405FA0 ;
+ verde: #3D8C6C #78A898 ;
+ verde hoja: #228341 #599740 ;
+ naranja: #CB661A #DA9431 ;
+} */
+
+.azul {
+  background: #1D3E85;
+}
+
+.azul-claro {
+  background: #405FA0;
+}
+.azul-verde {
+  background: #3D8C6C;
+}
+.azul-verde-claro {
+  background: #78A898;
+}
+.verde {
+  background: #228341;
+}
+.verde-claro {
+  background: #599740;
+}
+.naranja {
+  background: #CB661A;
+}
+.naranja-claro {
+  background: #DA9431;
+}

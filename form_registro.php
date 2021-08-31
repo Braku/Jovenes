@@ -49,7 +49,7 @@
                   <input class="form-control" placeholder="Repite la contrase&ntilde;a" type="password">
                 </div> <!-- form-group// -->
                 <div class="form-group">
-                  <button type="submit" class="btn login_btn"> Crea tu cuenta  </button>
+                  <button type="submit" class="btn login_btn azul" style="border-radius: 50px 0px; padding: 5px 20px;"> Crea tu cuenta  </button>
                 </div> <!-- form-group// -->
                 <p class="text-center">¿Tienes una cuenta? <a href="form_login.php">Ingresa</a> </p>
               </form>

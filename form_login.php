@@ -34,13 +34,13 @@
   							</div>
   						</div>
   							<div class="d-flex justify-content-center mt-3 login_container">
-  				 	      <button type="submit" name="button" class="btn login_btn">Entrar</button>
+  				 	      <button type="submit" name="button" style="border-radius: 50px 0px; padding: 5px 20px;" class="btn login_btn azul">Entrar</button>
   				       </div>
   					</form>
 				  </div>
   				<div class="mt-4">
   					<div class="d-flex justify-content-center links">
-  						¿No tienes una cuenta? <a href="#" class="ml-2">Registrate</a>
+  						¿No tienes una cuenta? <a href="form_registro.php" class="ml-2">Registrate</a>
   					</div>
   					<div class="d-flex justify-content-center links">
   						<a href="#">¿Olvidaste tu contraseña?</a>
