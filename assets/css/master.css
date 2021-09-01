@@ -138,18 +138,5 @@ body, html {
 .box-banner {
 	width: 100%;
 	height: 400px;
-	overflow: hidden;
-}
-
-.box-banner img{
-  width: 100%;
-  height: auto;
-	margin-top: -32%;
 	object-fit: cover;
-	object-position: center;
-}
-
-.txt-banner {
-	margin: -40% 0 auto 10%;
-	color: black;
 }

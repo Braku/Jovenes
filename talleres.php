@@ -31,7 +31,7 @@
                       <a href="#"> <img src="assets/img/placeholder_m.png" style=" margin-top: -33%;" alt=""> </a>
                     </div>
                     <h5 class="card-title " style="margin-top: 1%;">
-                      <span class="">'.$datos['nom_taller'].'</span>
+                      '.$datos['nom_taller'].'
                     </h5>
                     <p class="card-text placeholder-glow">
                       <span class="placeholder col-7 placeholder-s"></span>
@@ -72,7 +72,6 @@
                   </div>
                 </div>
               ');
-
           }
         }
          ?>

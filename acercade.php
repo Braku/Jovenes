@@ -8,12 +8,9 @@
     <header>
       <?php include_once 'includes/nav.php'; ?>
     </header>
-    <div class="contenedor">
+    <div class="conteiner bg-light" style="padding: 0;">
       <section>
-        <img src="" alt="">
-        <h2></h2>
-        <p></p>
-        <a href="#" class="btn btn-primary">Ver más</a>
+
       </section>
     </div>
   </body>
