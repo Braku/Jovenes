@@ -5,7 +5,7 @@
     <?php include_once 'includes/head.php' ?>
   </head>
   <body>
-    <header>
+    <header class="container" style="padding: 0;">
       <?php include_once 'includes/nav.php'; ?>
     </header>
     <div class="contenedor">

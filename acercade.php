@@ -5,10 +5,10 @@
     <?php include_once 'includes/head.php' ?>
   </head>
   <body>
-    <header>
+    <header class="container" style="padding: 0;">
       <?php include_once 'includes/nav.php'; ?>
     </header>
-    <div class="conteiner bg-light" style="padding: 0;">
+    <div class="container bg-light" style="padding: 0;">
       <section>
 
       </section>
