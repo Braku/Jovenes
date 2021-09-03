@@ -128,6 +128,21 @@ body, html {
 	object-position: center;
 }
 
+.box-user{
+	height: auto;
+	width: auto;
+	padding: 10px 0;
+	object-position: center;
+}
+
+.box-user img {
+	border-radius: 100px;
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	object-position: center;
+}
+
 /* .box img{
   width: 100%;
   height: auto;
