@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 31-08-2021 a las 01:09:57
+-- Tiempo de generación: 04-09-2021 a las 17:53:43
 -- Versión del servidor: 10.4.20-MariaDB
 -- Versión de PHP: 8.0.9
 
@@ -28,9 +28,9 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `comentarios` (
-  `id` int(4) NOT NULL,
+  `id` int(11) NOT NULL,
   `id_autor` int(4) NOT NULL,
-  `id_post` int(4) NOT NULL,
+  `id_pub` int(11) NOT NULL,
   `contenido` varchar(300) NOT NULL,
   `fecha_pub` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -45,7 +45,7 @@ CREATE TABLE `img_talleres` (
   `id` int(4) NOT NULL,
   `id_taller` int(4) NOT NULL,
   `dir_img` varchar(1000) NOT NULL,
-  `nom_img` int(100) NOT NULL
+  `nom_img` int(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -58,7 +58,7 @@ CREATE TABLE `img_usuarios` (
   `id` int(4) NOT NULL,
   `id_usuario` int(4) NOT NULL,
   `dir_img` varchar(1000) NOT NULL,
-  `nom_img` varchar(100) NOT NULL
+  `nom_img` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -68,7 +68,7 @@ CREATE TABLE `img_usuarios` (
 --
 
 CREATE TABLE `publicaciones` (
-  `id` int(4) NOT NULL,
+  `id` int(11) NOT NULL,
   `id_usuario` int(4) NOT NULL,
   `tema` varchar(50) NOT NULL,
   `contenido` text NOT NULL,
@@ -116,10 +116,11 @@ CREATE TABLE `talleres` (
 
 CREATE TABLE `usuarios` (
   `id` int(4) NOT NULL,
-  `username` varchar(20) NOT NULL,
   `nombre` varchar(50) NOT NULL,
   `apellido` varchar(50) NOT NULL,
   `edad` int(2) NOT NULL,
+  `usuario` varchar(100) NOT NULL,
+  `contra` varchar(200) NOT NULL,
   `id_rol` int(4) NOT NULL,
   `fecha_nac` date NOT NULL,
   `correo` varchar(100) NOT NULL,
@@ -136,7 +137,7 @@ CREATE TABLE `usuarios` (
 ALTER TABLE `comentarios`
   ADD PRIMARY KEY (`id`),
   ADD KEY `id_autor` (`id_autor`),
-  ADD KEY `id_post` (`id_post`);
+  ADD KEY `id_post` (`id_pub`);
 
 --
 -- Indices de la tabla `img_talleres`
@@ -178,7 +179,6 @@ ALTER TABLE `talleres`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `uname` (`username`),
   ADD UNIQUE KEY `correo` (`correo`),
   ADD KEY `rol` (`id_rol`);
 
@@ -190,7 +190,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `comentarios`
 --
 ALTER TABLE `comentarios`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `img_talleres`
@@ -208,7 +208,7 @@ ALTER TABLE `img_usuarios`
 -- AUTO_INCREMENT de la tabla `publicaciones`
 --
 ALTER TABLE `publicaciones`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `talleres`
@@ -231,7 +231,7 @@ ALTER TABLE `usuarios`
 --
 ALTER TABLE `comentarios`
   ADD CONSTRAINT `comentarios_ibfk_1` FOREIGN KEY (`id_autor`) REFERENCES `usuarios` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `comentarios_ibfk_2` FOREIGN KEY (`id_post`) REFERENCES `publicaciones` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `comentarios_ibfk_2` FOREIGN KEY (`id_pub`) REFERENCES `publicaciones` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `img_talleres`
