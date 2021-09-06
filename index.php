@@ -2,9 +2,6 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-      <style media="screen">
-
-      </style>
     <?php include_once 'includes/head.php' ?>
   </head>
   <body>

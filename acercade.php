@@ -9,8 +9,8 @@
       <?php include_once 'includes/nav.php'; ?>
     </header>
     <div class="container bg-light" style="padding: 0;">
-      <section class="card" style="margin-top: 2%;">
-        <div class="card-body text-center">
+      <section class="card" style="margin-top: 2%; border: 0px;">
+        <div class="card-body text-center justify-content-center">
           <div class="">
             <h5 class="card-title placeholder-glow">
               <span class="placeholder col-6 placeholder-lg"></span>
@@ -24,6 +24,42 @@
             </p>
           </div>
         </div>
+      </section>
+      <section class="card" style="border: 0px;"> 
+        <article class="row">
+          <div class="col-sm-6">
+            <div class="card" style="margin-top: 2%; border: 0px;">
+              <div class="card-body justify-content-left float-start">
+                <h5 class="card-title placeholder-glow">
+                  <span class="placeholder col-6 placeholder-lg"></span>
+                </h5>
+                <p class="card-text placeholder-glow">
+                  <span class="placeholder col-7 placeholder-s"></span>
+                  <span class="placeholder col-4 placeholder-s"></span>
+                  <span class="placeholder col-4 placeholder-s"></span>
+                  <span class="placeholder col-6 placeholder-s"></span>
+                  <span class="placeholder col-8 placeholder-s"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card" style="margin-top: 2%; border: 0px;">
+              <div class="card-body text-end justify-content-right float-end">
+                <h5 class="card-title placeholder-glow">
+                  <span class="placeholder col-6 placeholder-lg"></span>
+                </h5>
+                <p class="card-text placeholder-glow">
+                  <span class="placeholder col-7 placeholder-s"></span>
+                  <span class="placeholder col-4 placeholder-s"></span>
+                  <span class="placeholder col-4 placeholder-s"></span>
+                  <span class="placeholder col-6 placeholder-s"></span>
+                  <span class="placeholder col-8 placeholder-s"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
       </section>
     </div>
   </body>
