@@ -18,6 +18,7 @@
           </div>
           <div class="carousel-inner">
             ');
+            //Se le indica al carrusel cual es el inicial para activarlo
               if($datos['id']==0){
                 echo ('
                 <div class="carousel-item active">

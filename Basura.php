@@ -39,3 +39,22 @@
     }
   }
  ?>
+
+<!-- Offcanvas -->
+
+ <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+   <img src="assets/img/placeholder_m.png" class="box-banner d-block w-100" alt="...">
+ </a>
+
+ <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+   <div class="offcanvas-header">
+     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+   </div>
+   <!-- Cuerpo de canvas -->
+   <div class="offcanvas-body">
+     <div>
+       Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+     </div>
+   </div>
+ </div>
