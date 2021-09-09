@@ -35,7 +35,7 @@
       for ($i=0; $i < 3; $i++) {
         echo('
         <div class="card" style="width: 100%; border-radius: 0;" aria-hidden="true">
-          <div class="box">
+          <div class="">
             <img src="assets/img/placeholder_m.png" alt="" class="box">
           </div>
           <div class="card-body">
@@ -43,11 +43,11 @@
               <span class="placeholder col-6" placeholder-lg></span>
             </h5>
             <p class="card-text placeholder-glow">
-              <span class="placeholder col-7" placeholder-s></span>
-              <span class="placeholder col-4" placeholder-s></span>
-              <span class="placeholder col-4" placeholder-s></span>
-              <span class="placeholder col-6" placeholder-s></span>
-              <span class="placeholder col-8" placeholder-s></span>
+              <span class="placeholder col-7 placeholder-s" ></span>
+              <span class="placeholder col-4 placeholder-s" ></span>
+              <span class="placeholder col-4 placeholder-s" ></span>
+              <span class="placeholder col-6 placeholder-s" ></span>
+              <span class="placeholder col-8 placeholder-s" ></span>
             </p>
             <a href="#" tabindex="-1" class="btn disabled placeholder col-6 float-end" style=" border-radius: 50px 0; background: #1D3E85; padding: 7px 20px;"></a>
           </div>
