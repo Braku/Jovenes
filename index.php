@@ -12,12 +12,12 @@
       ?>
 
     </header>
-    <div class="container bg-light" style="height: 100%; padding: 0;">
-      <section class="card float-start" style="width: 73%; height: auto; border-radius: 0; margin-bottom: 10%;">
+    <div class="container" style="height: 100%; padding: 0;">
+      <section class="card float-start" style="width: 73%; height: 100%; border-radius: 0; margin-bottom: 10%;">
         <?php include_once 'includes/anuncios.php'; ?>
       </section>
 
-      <aside class="float-end bg-light overflow-auto" style="width: 27%; height: 100%">
+      <aside class="float-end overflow-auto" style="width: 27%; height: 100%; border-radius: 0;">
         <?php include_once 'includes/aside.php'; ?>
       </aside>
     </div>
