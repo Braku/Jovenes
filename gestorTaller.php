@@ -40,7 +40,7 @@
 
           <!-- EDITAR FLYER TITULO Y DESCRIPCION -->
 
-          <div class="card" style="border: 0; margin: auto 1.5%;">
+          <div class="card" style=" height: 300px; border: 0; margin: auto 1.5%;">
             <div class="row g-0">
               <div class="col-md-3">
                 <img src="assets/img/placeholder_m.png" style="height: 300px; width: 250px;" class="box-banner" alt="...">
@@ -62,7 +62,7 @@
                 </div>
               </div>
               <div class="col-md-2">
-                <a href="#" class="align-bottom btn float-end" style="padding: 20px; background-color: #878896;"></a>
+                <a href="#" class="align-bottom btn float-end" style="padding: 50px 30px; border-radius: 50px 0; background-color: #878896;"></a>
               </div>
             </div>
           </div>
@@ -71,91 +71,56 @@
 
           <div class="card-body">
             <div class="row">
-              <div class="col">
-                <div class="card" style="border: 0;">
-                  <div class="card-body">
-                    <div>
-                      <div class="card">
-                        <img src="assets/img/placeholder_m.png" style="height: 200px;" class="box-banner" alt="...">
-                        <div class="card-img-overlay">
-                          <a href="#" class="btn float-end align-bottom" style="padding: 20px; background-color: rgb(135, 136, 150);"></a>
+
+              <?php
+                for ($i=0; $i <= 2; $i++) {
+                  echo ('
+                  <div class="col">
+                    <div class="card" style="border: 0;">
+                      <div class="card-body">
+                        <div>
+                          <div class="card">
+                            <img src="assets/img/placeholder_m.png" style="height: 200px;" class="box-banner" alt="...">
+                            <div class="card-img-overlay">
+                              <a href="#" class="btn float-end align-bottom" style="padding: 20px; background-color: rgb(135, 136, 150);"></a>
+                            </div>
+                          </div>
+                          <div class="" style="margin: 2% 0;">
+                            <h5 class="card-title placeholder-glow">
+                              <span class="placeholder col-6 placeholder-lg"></span>
+                            </h5>
+                            <p class="card-text placeholder-glow">
+                              <span class="placeholder col-7 placeholder-s"></span>
+                              <span class="placeholder col-4 placeholder-s"></span>
+                              <span class="placeholder col-4 placeholder-s"></span>
+                              <span class="placeholder col-6 placeholder-s"></span>
+                              <span class="placeholder col-8 placeholder-s"></span>
+                            </p>
+                          </div>
                         </div>
-                      </div>
-                      <div class="" style="margin: 2% 0;">
-                        <h5 class="card-title placeholder-glow">
-                          <span class="placeholder col-6 placeholder-lg"></span>
-                        </h5>
-                        <p class="card-text placeholder-glow">
-                          <span class="placeholder col-7 placeholder-s"></span>
-                          <span class="placeholder col-4 placeholder-s"></span>
-                          <span class="placeholder col-4 placeholder-s"></span>
-                          <span class="placeholder col-6 placeholder-s"></span>
-                          <span class="placeholder col-8 placeholder-s"></span>
-                        </p>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card" style="border: 0;">
-                  <div class="card-body">
-                    <div>
-                      <div class="card">
-                        <img src="assets/img/placeholder_m.png" style="height: 200px;" class="box-banner" alt="...">
-                        <div class="card-img-overlay">
-                          <a href="#" class="btn float-end align-bottom" style="padding: 20px; background-color: rgb(135, 136, 150);"></a>
-                        </div>
-                      </div>
-                      <div class="" style="margin: 2% 0;">
-                        <h5 class="card-title placeholder-glow">
-                          <span class="placeholder col-6 placeholder-lg"></span>
-                        </h5>
-                        <p class="card-text placeholder-glow">
-                          <span class="placeholder col-7 placeholder-s"></span>
-                          <span class="placeholder col-4 placeholder-s"></span>
-                          <span class="placeholder col-4 placeholder-s"></span>
-                          <span class="placeholder col-6 placeholder-s"></span>
-                          <span class="placeholder col-8 placeholder-s"></span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card" style="border: 0;">
-                  <div class="card-body">
-                    <div>
-                      <div class="card">
-                        <img src="assets/img/placeholder_m.png" style="height: 200px;" class="box-banner" alt="...">
-                        <div class="card-img-overlay">
-                          <a href="#" class="btn float-end align-bottom" style="padding: 20px; background-color: rgb(135, 136, 150);"></a>
-                        </div>
-                      </div>
-                      <div class="" style="margin: 2% 0;">
-                        <h5 class="card-title placeholder-glow">
-                          <span class="placeholder col-6 placeholder-lg"></span>
-                        </h5>
-                        <p class="card-text placeholder-glow">
-                          <span class="placeholder col-7 placeholder-s"></span>
-                          <span class="placeholder col-4 placeholder-s"></span>
-                          <span class="placeholder col-4 placeholder-s"></span>
-                          <span class="placeholder col-6 placeholder-s"></span>
-                          <span class="placeholder col-8 placeholder-s"></span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                  ');
+                }
+               ?>
 
             </div>
           </div>
+
+          <!-- TABLA PARA GESTIONAR COMENTARIOS  -->
+
           <section class="card" style="border: 0;">
             <div class="card-body bg-light" style="margin: 2%;">
               <div class="placeholder-glow">
-                <h4 class="text-center"> <span class="placeholder col-3"></span> </h4>
+                <h4 class="text-center"> Comentarios </h4>
+              </div>
+              <div class="placeholder-glow">
+                <table class="table table-striped table-hover">
+                  <tr>
+                    <td colspan='3' width='400%' align='center' class='celda'> No hay comentarios en este taller </td>
+                  </tr>
+                </table>
               </div>
           </section>
         </div>

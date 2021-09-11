@@ -8,40 +8,146 @@
     <header class="container" style="padding: 0;">
       <?php include_once 'includes/nav.php'; ?>
     </header>
-    <div class="contenedor">
-      <section class="card mb-3">
+    <div class="contenedor" style="margin: 2% auto;">
+      <section class="card" style=" height: auto; border: 0; border-radius: 0;">
+        <div class="card-body">
+          <div class="">
+            <div class="">
+              <img src="assets/img/placeholder_m.png" style="height: 300px; width: 250px; padding: 0 20px;" class="box-banner float-start" alt="...">
+            </div>
+            <div class="placeholder-glow">
+              <h4 class="card-title">
+                <span class="placeholder col-3 placeholder"></span>
+              </h4>
+              <div class=" placeholder-glow card-body">
+                <p class="">
+                  <span class="placeholder col-7 placeholder-s"></span>
+                  <span class="placeholder col-4 placeholder-s"></span>
+                  <span class="placeholder col-4 placeholder-s"></span>
+                  <span class="placeholder col-6 placeholder-s"></span>
+                  <span class="placeholder col-3 placeholder-s"></span>
+                  <span class="placeholder col-7 placeholder-s"></span>
+                  <span class="placeholder col-3 placeholder-s"></span>
+                  <span class="placeholder col-2 placeholder-s"></span>
+                  <span class="placeholder col-4 placeholder-s"></span>
+                  <span class="placeholder col-4 placeholder-s"></span>
+                  <span class="placeholder col-5 placeholder-s"></span>
+                  <span class="placeholder col-3 placeholder-s"></span>
+                  <span class="placeholder col-4 placeholder-s"></span>
+                  <span class="placeholder col-2 placeholder-s"></span>
+                  <span class="placeholder col-4 placeholder-s"></span>
+                  <span class="placeholder col-5 placeholder-s"></span>
+                  <span class="placeholder col-3 placeholder-s"></span>
+                  <span class="placeholder col-5 placeholder-s"></span>
+                  <span class="placeholder col-1 placeholder-s"></span>
+                  <span class="placeholder col-2 placeholder-s"></span>
+                  <span class="placeholder col-1 placeholder-s"></span>
+                  <span class="placeholder col-4 placeholder-s"></span>
+                  <span class="placeholder col-2 placeholder-s"></span>
+                  <span class="placeholder col-4 placeholder-s"></span>
+                  <span class="placeholder col-5 placeholder-s"></span>
+                  <span class="placeholder col-5 placeholder-s"></span>
+                  <span class="placeholder col-2 placeholder-s"></span>
+                  <span class="placeholder col-4 placeholder-s"></span>
+                  <span class="placeholder col-2 placeholder-s"></span>
+                  <span class="placeholder col-7 placeholder-s"></span>
+                  <span class="placeholder col-2 placeholder-s"></span>
+                  <span class="placeholder col-2 placeholder-s"></span>
+                  <span class="placeholder col-2 placeholder-s"></span>
+                  <span class="placeholder col-4 placeholder-s"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+      <section class="card" style="border: 0; border-radius: 0;">
+        <div class="card-body">
+          <div class="row">
+            <?php
+              for ($i=0; $i <= 2; $i++) {
+                echo ('
+                <div class="col">
+                  <div class="card" style="border: 0;">
+                    <div class="card-body text-center">
+                      <div>
+                        <div class="card">
+                          <img src="assets/img/placeholder_m.png" style="height: 200px;" class="box-banner" alt="...">
+                        </div>
+                        <div class="" style="margin: 2% 0;">
+                          <h5 class="card-title placeholder-glow">
+                            <span class="placeholder col-6 placeholder-lg"></span>
+                          </h5>
+                          <p class="card-text placeholder-glow">
+                            <span class="placeholder col-7 placeholder-s"></span>
+                            <span class="placeholder col-4 placeholder-s"></span>
+                            <span class="placeholder col-4 placeholder-s"></span>
+                            <span class="placeholder col-6 placeholder-s"></span>
+                            <span class="placeholder col-8 placeholder-s"></span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                ');
+              }
+             ?>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="card" style=" border: 0; border-radius: 0;">
         <div class="card-body" style="max-width: 100%;">
           <div class="row g-0">
             <section class="container mt-5">
               <div class="row d-flex justify-content-left">
-                  <div class="col-md-8">
-                      <div class="headings d-flex justify-content-between align-items-center mb-3">
-                          <h5>Unread comments(6)</h5>
+                  <div class="col-md-8 card-body placeholder-glow">
+                      <div class="headings justify-content-between align-items-center mb-3">
+                        <h5>
+                          <span class="placeholder col-4 placeholder-lg"></span>
+                        </h5>
                       </div>
-                      <div class="card p-3">
+                      <div class="card p-3" style=" border: 0;">
                           <div class="d-flex justify-content-between align-items-center">
-                              <div class="user flex-row align-items-center">
-                                <img src="https://i.imgur.com/hczKIze.jpg" width="30" class="user-img rounded-circle mr-2">
-                                <span><small class="font-weight-bold text-primary">james_olesenn</small>
-                                  <small class="font-weight-bold">Hmm, This poster looks cool</small></span>
-                                </div>
-                                <small>2 days ago</small>
+                            <div class="user flex-row align-items-center">
+                              <img src="assets/img/placeholder_u.jpg" width="50px" class="user-img rounded-circle mr-2">
+                            </div>
+                            <div class="card-body">
+                                <span class="placeholder col-4 placeholder-s" style="background: #00a4ff;"></span>
+                              <p class="">
+                                <span class="placeholder col-7 placeholder-xs"></span>
+                                <span class="placeholder col-4 placeholder-xs"></span>
+                                <span class="placeholder col-2 placeholder-xs"></span>
+                                <span class="placeholder col-5 placeholder-xs"></span>
+                              </p>
+                            </div>
+                            <span class="placeholder col-2 placeholder-s"></span>
+
                           </div>
                       </div>
-                      <div class="card p-3 mt-2">
+                      <div class="card p-3" style=" border: 0;">
                           <div class="d-flex justify-content-between align-items-center">
-                              <div class="user flex-row align-items-center">
-                                <img src="https://i.imgur.com/C4egmYM.jpg" width="30" class="user-img rounded-circle mr-2">
-                                <span><small class="font-weight-bold text-primary">olan_sams</small>
-                                  <small class="font-weight-bold">Loving your work and profile! </small></span>
-                                </div>
-                                <small>3 days ago</small>
+                            <div class="user flex-row align-items-center">
+                              <img src="assets/img/placeholder_u.jpg" width="50px" class="user-img rounded-circle mr-2">
+                            </div>
+                            <div class="card-body">
+                                <span class="placeholder col-4 placeholder-s" style="background: #00a4ff;"></span>
+                              <p class="">
+                                <span class="placeholder col-7 placeholder-xs"></span>
+                                <span class="placeholder col-4 placeholder-xs"></span>
+                              </p>
+                            </div>
+                            <span class="placeholder col-2 placeholder-s"></span>
+
                           </div>
                       </div>
-                          </div>
-                      </div>
+                    </div>
                   </div>
-              </div>
             </section>
             <?php
               // include_once 'consultas/conexion.php';
@@ -153,5 +259,3 @@
     </div>
   </body>
 </html>
-
-<input type="submit" class="btn btn-primary" name="" value="">
