@@ -26,15 +26,61 @@
               </li>
             </ul>
           </nav>
+
+          <!-- EDITAR BANNER -->
+
+          <div class="card-body">
+            <div class="card">
+              <img src="assets/img/placeholder_m.png" style="height: 300px;" class="box-banner d-block w-100" alt="...">
+              <div class="card-img-overlay">
+                <a href="#" class="btn float-end align-bottom" style="padding: 20px; background-color: rgb(135, 136, 150);"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- EDITAR FLYER TITULO Y DESCRIPCION -->
+
+          <div class="card" style="border: 0; margin: auto 1.5%;">
+            <div class="row g-0">
+              <div class="col-md-3">
+                <img src="assets/img/placeholder_m.png" style="height: 300px; width: 250px;" class="box-banner" alt="...">
+                <div class="card-img-overlay" style=" width: 250px;">
+                  <a href="#" class=" btn float-end" style="padding: 20px; background-color: #878896;"></a>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class=" placeholder-glow card-body">
+                  <h5>
+                    <span class="placeholder col-8 placeholder"></span>
+                  </h5>
+                  <p class="">
+                    <span class="placeholder col-7 placeholder-s"></span>
+                    <span class="placeholder col-6 placeholder-s"></span>
+                    <span class="placeholder col-4 placeholder-s"></span>
+                    <span class="placeholder col-4 placeholder-s"></span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <a href="#" class="align-bottom btn float-end" style="padding: 20px; background-color: #878896;"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- EDITAR TRES IMAGENES -->
+
           <div class="card-body">
             <div class="row">
               <div class="col">
                 <div class="card" style="border: 0;">
                   <div class="card-body">
                     <div>
-                      <a href="#">
-                        <img src="assets/img/placeholder_m.png" alt="" class="box">
-                      </a>
+                      <div class="card">
+                        <img src="assets/img/placeholder_m.png" style="height: 200px;" class="box-banner" alt="...">
+                        <div class="card-img-overlay">
+                          <a href="#" class="btn float-end align-bottom" style="padding: 20px; background-color: rgb(135, 136, 150);"></a>
+                        </div>
+                      </div>
                       <div class="" style="margin: 2% 0;">
                         <h5 class="card-title placeholder-glow">
                           <span class="placeholder col-6 placeholder-lg"></span>
@@ -55,9 +101,12 @@
                 <div class="card" style="border: 0;">
                   <div class="card-body">
                     <div>
-                      <a href="#">
-                        <img src="assets/img/placeholder_m.png" alt="" class="box">
-                      </a>
+                      <div class="card">
+                        <img src="assets/img/placeholder_m.png" style="height: 200px;" class="box-banner" alt="...">
+                        <div class="card-img-overlay">
+                          <a href="#" class="btn float-end align-bottom" style="padding: 20px; background-color: rgb(135, 136, 150);"></a>
+                        </div>
+                      </div>
                       <div class="" style="margin: 2% 0;">
                         <h5 class="card-title placeholder-glow">
                           <span class="placeholder col-6 placeholder-lg"></span>
@@ -78,9 +127,12 @@
                 <div class="card" style="border: 0;">
                   <div class="card-body">
                     <div>
-                      <a href="#">
-                        <img src="assets/img/placeholder_m.png" alt="" class="box">
-                      </a>
+                      <div class="card">
+                        <img src="assets/img/placeholder_m.png" style="height: 200px;" class="box-banner" alt="...">
+                        <div class="card-img-overlay">
+                          <a href="#" class="btn float-end align-bottom" style="padding: 20px; background-color: rgb(135, 136, 150);"></a>
+                        </div>
+                      </div>
                       <div class="" style="margin: 2% 0;">
                         <h5 class="card-title placeholder-glow">
                           <span class="placeholder col-6 placeholder-lg"></span>
@@ -105,47 +157,6 @@
               <div class="placeholder-glow">
                 <h4 class="text-center"> <span class="placeholder col-3"></span> </h4>
               </div>
-              <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel" data-interval="9000">
-                <div class="carousel-inner">
-                  <div class="carousel-item active" style="padding: 1% 3%;">
-                    <h5 class="card-title placeholder-glow">
-                      <span class="placeholder col-6 placeholder-lg"></span>
-                    </h5>
-                    <p class="card-text placeholder-glow">
-                      <span class="placeholder col-7 placeholder-s" ></span>
-                      <span class="placeholder col-4 placeholder-s" ></span>
-                      <span class="placeholder col-4 placeholder-s" ></span>
-                      <span class="placeholder col-6 placeholder-s" ></span>
-                      <span class="placeholder col-8 placeholder-s" ></span>
-                    </p>
-                    <a href="#" tabindex="-1" class="btn disabled placeholder placeholder-glow col-6 float-end" style="width: 70px; border-radius: 0px 0px 50px 0px; background: #595959; padding: 7px 20px;"></a>
-                    <a href="#" tabindex="-1" class="btn disabled placeholder placeholder-glow col-6 float-end" style="width: 70px; border-radius: 50px 0px 0px 0px; background: #a3a3a3; padding: 7px 20px;"></a>
-
-                  </div>
-                  <div class="carousel-item" style="padding: 1% 3%;">
-                    <h5 class="card-title placeholder-glow">
-                      <span class="placeholder col-6 placeholder-lg"></span>
-                    </h5>
-                    <p class="card-text placeholder-glow">
-                      <span class="placeholder col-7 placeholder-s" ></span>
-                      <span class="placeholder col-4 placeholder-s" ></span>
-                      <span class="placeholder col-4 placeholder-s" ></span>
-                    </p>
-                    <a href="#" tabindex="-1" class="btn disabled placeholder placeholder-glow col-6 float-end" style="width: 70px; border-radius: 0px 0px 50px 0px; background: #595959; padding: 7px 20px;"></a>
-                    <a href="#" tabindex="-1" class="btn disabled placeholder placeholder-glow col-6 float-end" style="width: 70px; border-radius: 50px 0px 0px 0px; background: #a3a3a3; padding: 7px 20px;"></a>
-
-                  </div>
-                  <button style="width: 30px; padding: 0%;" class="float-start carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button style="width: 30px; padding: 0%;" class="float-end carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-
-              </div>
-            </div>
           </section>
         </div>
       </section>

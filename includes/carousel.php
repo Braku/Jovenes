@@ -76,8 +76,8 @@
                   <div class="carousel-item active">
                     <img src="assets/img/placeholder_m.png" class="box-banner d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5> <span class="placeholder col-6" placeholder-lg></span> </h5>
-                      <p> <span class="placeholder col-7" placeholder-s></span> </p>
+                      <h5> <span class="placeholder col-6 placeholder-lg"></span> </h5>
+                      <p> <span class="placeholder col-7 placeholder-s"></span> </p>
                     </div>
                     </div>
                   ');
@@ -86,8 +86,8 @@
                   <div class="carousel-item">
                     <img src="assets/img/placeholder_m.png" class="box-banner d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5> <span class="placeholder col-6" placeholder-lg></span> </h5>
-                      <p> <span class="placeholder col-7" placeholder-s></span> </p>
+                      <h5> <span class="placeholder col-6 placeholder-lg" ></span> </h5>
+                      <p> <span class="placeholder col-7 placeholder-s"></span> </p>
                     </div>
                     </div>
                   ');

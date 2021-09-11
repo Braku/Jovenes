@@ -40,7 +40,7 @@
           </div>
           <div class="card-body">
             <h5 class="card-title placeholder-glow">
-              <span class="placeholder col-6" placeholder-lg></span>
+              <span class="placeholder col-6 placeholder-lg" ></span>
             </h5>
             <p class="card-text placeholder-glow">
               <span class="placeholder col-7 placeholder-s" ></span>

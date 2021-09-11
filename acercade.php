@@ -72,8 +72,16 @@
                       <img src="assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
                     </button>
                     <div class="collapse multi-collapse" id="multiCollapseExample1">
-                      <div class="card card-body">
-                        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      <div class="text-center placeholder-glow card card-body">
+                        <h5>
+                          <span class="placeholder col-8 placeholder"></span>
+                        </h5>
+                        <p class="">
+                          <span class="placeholder col-7 placeholder-s"></span>
+                          <span class="placeholder col-6 placeholder-s"></span>
+                          <span class="placeholder col-4 placeholder-s"></span>
+                          <span class="placeholder col-4 placeholder-s"></span>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -82,8 +90,16 @@
                       <img src="assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
                     </button>
                     <div class="collapse multi-collapse" id="multiCollapseExample2">
-                      <div class="card card-body">
-                        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      <div class="text-center placeholder-glow card card-body">
+                        <h5>
+                          <span class="placeholder col-8 placeholder"></span>
+                        </h5>
+                        <p class="">
+                          <span class="placeholder col-7 placeholder-s"></span>
+                          <span class="placeholder col-6 placeholder-s"></span>
+                          <span class="placeholder col-4 placeholder-s"></span>
+                          <span class="placeholder col-4 placeholder-s"></span>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -92,8 +108,16 @@
                       <img src="assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
                     </button>
                     <div class="collapse multi-collapse" id="multiCollapseExample3">
-                      <div class="card card-body">
-                        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      <div class="text-center placeholder-glow card card-body">
+                        <h5>
+                          <span class="placeholder col-8 placeholder"></span>
+                        </h5>
+                        <p class="">
+                          <span class="placeholder col-7 placeholder-s"></span>
+                          <span class="placeholder col-6 placeholder-s"></span>
+                          <span class="placeholder col-4 placeholder-s"></span>
+                          <span class="placeholder col-4 placeholder-s"></span>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -106,8 +130,16 @@
                       <img src="assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
                     </button>
                     <div class="collapse multi-collapse" id="multiCollapseExample4">
-                      <div class="card card-body">
-                        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      <div class="text-center placeholder-glow card card-body">
+                        <h5>
+                          <span class="placeholder col-8 placeholder"></span>
+                        </h5>
+                        <p class="">
+                          <span class="placeholder col-7 placeholder-s"></span>
+                          <span class="placeholder col-6 placeholder-s"></span>
+                          <span class="placeholder col-4 placeholder-s"></span>
+                          <span class="placeholder col-4 placeholder-s"></span>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -116,8 +148,16 @@
                       <img src="assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
                     </button>
                     <div class="collapse multi-collapse" id="multiCollapseExample5">
-                      <div class="card card-body">
-                        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      <div class="text-center placeholder-glow card card-body">
+                        <h5>
+                          <span class="placeholder col-8 placeholder"></span>
+                        </h5>
+                        <p class="">
+                          <span class="placeholder col-7 placeholder-s"></span>
+                          <span class="placeholder col-6 placeholder-s"></span>
+                          <span class="placeholder col-4 placeholder-s"></span>
+                          <span class="placeholder col-4 placeholder-s"></span>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -126,8 +166,16 @@
                       <img src="assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
                     </button>
                     <div class="collapse multi-collapse" id="multiCollapseExample6">
-                      <div class="card card-body">
-                        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      <div class="text-center placeholder-glow card card-body">
+                        <h5>
+                          <span class="placeholder col-8 placeholder"></span>
+                        </h5>
+                        <p class="">
+                          <span class="placeholder col-7 placeholder-s"></span>
+                          <span class="placeholder col-6 placeholder-s"></span>
+                          <span class="placeholder col-4 placeholder-s"></span>
+                          <span class="placeholder col-4 placeholder-s"></span>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -146,7 +194,7 @@
         </article>
       </section>
       <section class="card" style="border: 0px; border-radius: 0px;">
-        <div class="card-body text-center bg-primary align-items-center" style="height: 500px; margin: 6%;">
+        <div class="card-body text-center bg-light align-items-center" style="height: 500px; margin: 6%;">
           <div class="">
               <h5 class="card-title placeholder-glow">
                 <span class="placeholder col-6 placeholder-lg"></span>
