@@ -29,7 +29,7 @@
             <!-- BOTON AÑADIR TALLER -->
             <ul class="nav float-end">
               <li class="nav-item">
-                <button type="button" name="button" data-bs-toggle="modal" data-bs-target="#anadir" class="btn placeholder btn-abrir-popup" style="border-radius: 40px 0px; padding: 10px 50px; background: #1b3e8c;"></button>
+                <button type="button" name="button" data-bs-toggle="modal" data-bs-target="#aniadir" class="btn placeholder btn-abrir-popup" style="border-radius: 40px 0px; padding: 10px 50px; background: #1b3e8c;"></button>
               </li>
             </ul>
           </nav>
@@ -130,7 +130,7 @@
       </section>
 
       <!-- POPUP AÑADIR -->
-      <div class="modal fade" id="anadir" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- <div class="modal fade" id="anadir" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
@@ -150,9 +150,88 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" name="button" data-bs-toggle="modal" data-bs-target="#anadir_img" class="btn placeholder btn-abrir-popup" style="border-radius: 40px 0px; padding: 10px 50px; background: #1b3e8c;"></button>
               </div>
             </form>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- POPUP AÑADIR -->
+      <!-- <div class="modal fade" id="anadir_img" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">A&ntilde;adir tres imagenes sobre el taller</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form class="" action="index.html" method="post">
+              <div class="modal-body">
+                <label for="formFile" class="form-label">Elige una imagen para el banner </label>
+                <input class="form-control" type="file" id="formFile">
+                <label for="" class="form-label">Password</label>
+                <input type="text" class="form-control" aria-describedby="">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Escribe la descripción aquí" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <label for="floatingTextarea2">Descripción del taller</label>
+                </div>
+
+                <label for="formFile" class="form-label">Elige una imagen para el banner </label>
+                <input class="form-control" type="file" id="formFile">
+                <label for="" class="form-label">Password</label>
+                <input type="text" class="form-control" aria-describedby="">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Escribe la descripción aquí" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <label for="floatingTextarea2">Descripción del taller</label>
+                </div>
+
+                <label for="formFile" class="form-label">Elige una imagen para el banner </label>
+                <input class="form-control" type="file" id="formFile">
+                <label for="" class="form-label">Password</label>
+                <input type="text" class="form-control" aria-describedby="">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Escribe la descripción aquí" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <label for="floatingTextarea2">Descripción del taller</label>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="modal fade" id="aniadir" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
+              <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Show a second modal and hide this one with the button below.
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Open second modal</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+              <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Hide this modal and show the first with the button below.
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+            </div>
           </div>
         </div>
       </div>
