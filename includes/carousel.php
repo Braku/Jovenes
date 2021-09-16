@@ -6,7 +6,7 @@
   } else{
     $res = $conexion->query("SELECT * FROM img_banner");
 
-    //Ciclo que imprime tas reseñas en la tabla
+    //Ciclo que imprime las imagenes en el carousel
     while($datos=$res->fetch_array(MYSQLI_BOTH))
     {
       echo ('
@@ -22,7 +22,7 @@
               if($datos['id']==0){
                 echo ('
                 <div class="carousel-item active">
-                  <img src="assets/img/placeholder_m.png" class="box-banner d-block w-100" alt="...">
+                  <img src="'.$datos['dir_img'].'" class="box-banner d-block w-100" alt="'.$datos['nom_img'].'l">
                   <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
@@ -32,7 +32,7 @@
               } else {
                 echo ('
                 <div class="carousel-item">
-                  <img src="assets/img/placeholder_m.png" class="box-banner d-block w-100" alt="...">
+                  <img src="'.$datos['dir_img'].'" class="box-banner d-block w-100" alt="'.$datos['nom_img'].'">
                   <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
@@ -55,7 +55,7 @@
       ');
     }
 
-    // Cuenta las filas para saber ssi estan vacias
+    // Cuenta las filas para saber si estan vacias
     $res1 = $conexion->query("SELECT * FROM img_banner");
     $filas = $res1->fetch_array();
 

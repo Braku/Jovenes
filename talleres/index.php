@@ -2,16 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <?php include_once 'includes/head.php' ?>
+    <title>Talleres |</title>
+
+    <?php include_once '../includes/head.php' ?>
   </head>
   <body>
     <header class="container" style="padding: 0;">
-      <?php include_once 'includes/nav.php'; ?>
+      <?php include_once '../includes/nav.php'; ?>
     </header>
     <div class="container" style="margin: 2% auto;">
       <section>
         <?php
-        include_once 'consultas/conexion.php';
+        include_once '../consultas/conexion.php';
 
         if(!$conexion){
           die('error connecting to database');
@@ -48,7 +50,7 @@
                 <div class="card" style="margin-bottom: 1%;">
                   <div class="card-body">
                     <div>
-                      <a href="#"> <img src="assets/img/placeholder_m.png" class="box" style="height: 350px;" alt=""> </a>
+                      <a href="#"> <img src="../assets/img/placeholder_m.png" class="box" style="height: 350px;" alt=""> </a>
                     </div>
                     <h5 class="card-title placeholder-glow" style="margin-top: 1%;">
                       <span class="placeholder col-6 placeholder-lg"></span>

@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <title>Inicio | Re-educar Jovenes</title>
+
     <?php include_once 'includes/head.php' ?>
   </head>
   <body>

@@ -2,11 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <?php include_once 'includes/head.php' ?>
+    <title>Acerca de |</title>
+
+    <?php include_once '../includes/head.php' ?>
+
   </head>
   <body>
     <header class="container" style="padding: 0;">
-      <?php include_once 'includes/nav.php'; ?>
+      <?php include_once '../includes/nav.php'; ?>
     </header>
     <div class="container" style="padding: 0; margin: auto auto 20% auto;">
       <section class="card" style="margin-top: 2%; border: 0px; border-radius: 0px;">
@@ -69,7 +72,7 @@
                 <div class="row text-center" style="margin: 0;">
                   <div class="box-user col" style="padding: 3%;">
                     <button type="button" data-bs-toggle="collapse" style="border: 0px; border-radius: 125px;" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">
-                      <img src="assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
+                      <img src="../assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
                     </button>
                     <div class="collapse multi-collapse" id="multiCollapseExample1">
                       <div class="text-center placeholder-glow card card-body">
@@ -87,7 +90,7 @@
                   </div>
                   <div class="box-user col" style="padding: 3%;">
                     <button type="button" data-bs-toggle="collapse" style="border: 0px; border-radius: 125px;" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
-                      <img src="assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
+                      <img src="../assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
                     </button>
                     <div class="collapse multi-collapse" id="multiCollapseExample2">
                       <div class="text-center placeholder-glow card card-body">
@@ -105,7 +108,7 @@
                   </div>
                   <div class="box-user col" style="padding: 3%;">
                     <button type="button" data-bs-toggle="collapse" style="border: 0px; border-radius: 125px;" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">
-                      <img src="assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
+                      <img src="../assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
                     </button>
                     <div class="collapse multi-collapse" id="multiCollapseExample3">
                       <div class="text-center placeholder-glow card card-body">
@@ -127,7 +130,7 @@
                 <div class="row text-center" style="margin: 0;">
                   <div class="box-user col" style="padding: 3%;">
                     <button type="button" data-bs-toggle="collapse" style="border: 0px; border-radius: 125px;" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">
-                      <img src="assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
+                      <img src="../assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
                     </button>
                     <div class="collapse multi-collapse" id="multiCollapseExample4">
                       <div class="text-center placeholder-glow card card-body">
@@ -145,7 +148,7 @@
                   </div>
                   <div class="box-user col" style="padding: 3%;">
                     <button type="button" data-bs-toggle="collapse" style="border: 0px; border-radius: 125px;" data-bs-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample5">
-                      <img src="assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
+                      <img src="../assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
                     </button>
                     <div class="collapse multi-collapse" id="multiCollapseExample5">
                       <div class="text-center placeholder-glow card card-body">
@@ -163,7 +166,7 @@
                   </div>
                   <div class="box-user col" style="padding: 3%;">
                     <button type="button" data-bs-toggle="collapse" style="border: 0px; border-radius: 125px;" data-bs-target="#multiCollapseExample6" aria-expanded="false" aria-controls="multiCollapseExample6">
-                      <img src="assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
+                      <img src="../assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
                     </button>
                     <div class="collapse multi-collapse" id="multiCollapseExample6">
                       <div class="text-center placeholder-glow card card-body">
