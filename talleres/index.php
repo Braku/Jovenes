@@ -24,17 +24,17 @@
           while($datos=$res->fetch_array(MYSQLI_BOTH))
           {
             $res = $conexion->query("SELECT * FROM img_talleres WHERE id_taller = ".$datos['id']);
-            $numComments = mysqli_num_rows($resNum);
+            $datos_img = $res->fetch_array();
               echo('
                 <div class="card" style="margin-bottom: 1%;">
                   <div class="card-body">
                     <div class="box" style="height: 350px;">
-                      <a href="#"> <img src="assets/img/placeholder_m.png" class="box" style="height: 350px;" alt=""> </a>
+                      <a href="taller.php?id="'.$datos['id'].'"> <img src="'.$datos_img['dir_img'].'" class="box" style="height: 350px;" alt="'.$datos_img['nom_img'].'"> </a>
                     </div>
 
                     <h5 class="card-title " style="margin-top: 1%;">'.$datos['nom_taller'].'</h5>
                     <p class="card-text placeholder-glow">'.$datos['resumen_taller'].'</p>
-                    <a href="taller.php?id="'.$datos['id'].' tabindex="-1" class="btn col-6 float-end" style="width: 200px; border-radius: 50px 0; background: #1D3E85; padding: 7px 20px;"></a>
+                    <a href="taller.php?id="'.$datos['id'].'" class="btn col-6 float-end" style="width: 200px; border-radius: 50px 0; background: #1D3E85; padding: 7px 20px;"></a>
                   </div>
                 </div>
               ');
