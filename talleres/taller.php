@@ -46,7 +46,7 @@
                 ');
               }
 
-              if($datos_img == 3); 
+              if($datos_img == 3);
               else {
                 for ($i = 0; $i < 3 - $datos_img; $i++) {
                   echo ('
