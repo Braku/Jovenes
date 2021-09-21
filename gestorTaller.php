@@ -29,10 +29,56 @@
             <!-- BOTON AÑADIR TALLER -->
             <ul class="nav float-end">
               <li class="nav-item">
-                <button type="button" name="button" data-bs-toggle="modal" data-bs-target="#aniadir" class="btn placeholder btn-abrir-popup" style="border-radius: 40px 0px; padding: 10px 50px; background: #1b3e8c;"></button>
+                <button type="button" name="button" data-bs-toggle="modal" data-bs-target="#aniadir" class="btn placeholder" style="border-radius: 40px 0px; padding: 10px 50px; background: #1b3e8c;"></button>
               </li>
             </ul>
           </nav>
+
+          <div class="modal fade" id="aniadir" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel">A&ntilde;adir taller</h5>
+                  <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form class="" action="index.html" method="post">
+                    <label for="nom_taller">Taller:</label>
+                    <input id="nom_taller" class="form-control form-control-lg" type="text" placeholder="Nombre de taller" aria-label=".form-control-lg example">
+                    <label for="desc_taller" class="form-label">Descripci&oacute;n del taller:</label>
+                    <textarea class="form-control" id="desc_taller" rows="3" placeholder="Descripci&oacute;n"></textarea>
+                    <div class="mb-3">
+                      <label for="formFile" class="form-label">Selecciona la imagen del banner:</label>
+                      <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <div class="mb-3">
+                      <label for="formFile" class="form-label">Selecciona la imagen del flyer:</label>
+                      <input class="form-control" type="file" id="formFile">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#aniadirImg" data-bs-toggle="modal" data-bs-dismiss="modal">Open second modal</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="aniadirImg" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+                  <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Hide this modal and show the first with the button below.
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal">Back to first</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <!-- EDITAR BANNER -->
           <div class="card-body">
@@ -203,38 +249,7 @@
         </div>
       </div> -->
 
-      <div class="modal fade" id="aniadir" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
-              <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              Show a second modal and hide this one with the button below.
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Open second modal</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
-              <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              Hide this modal and show the first with the button below.
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </div>
   </body>
 </html>
