@@ -1,3 +1,19 @@
+<?php
+  if(isset($_GET['cerrar_sesion'])) {
+    session_unset($_SESSION['rol']);
+
+  }
+
+  if(!isset($_SESSION['rol'])) {
+    // header('location: index.php');
+  }else {
+    if($_SESSION['rol'] == 3) {
+      header('location: indexU.php');
+    } else {
+      header('location: indexU.php');
+    }
+  }
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -8,6 +24,7 @@
   </head>
   <body>
     <header class="container" style="padding: 0;">
+      <a class="btn float-end" href="login.php" style="background: #CB661A; color: rgb(228, 228, 228); border-radius: 25px 0;">Iniciar sesion</a>
       <?php
         include_once 'includes/nav.php';
         include_once 'includes/carousel.php';

@@ -24,8 +24,8 @@
               die('error conectando la base de datos' );
             } else {
 
-              $res_banner = $conexion->query("SELECT * FROM img_dtaller WHERE id_taller = ". $_GET['id']);
-              $datos_img = $res_banner->fetch_array();
+              $res_img = $conexion->query("SELECT * FROM img_dtaller WHERE id_taller = ". $_GET['id']);
+              $datos_img = $res_img->fetch_array();
               while($datos_img = $res->fetch_array(MYSQLI_BOTH)) {
                 echo ('
                 <div class="col">
@@ -36,7 +36,6 @@
                           <img src="'.$datos_img['dir_img'].'" style="height: 200px;" class="box-banner" alt="'.$datos_img['nom_img'].'">
                         </div>
                         <div class="" style="margin: 2% 0;">
-                          <h5 class="card-title">'. $datos_img[''].'  </h5>
                           <p class="card-text">'.$datos_img['frase'].'</p>
                         </div>
                       </div>

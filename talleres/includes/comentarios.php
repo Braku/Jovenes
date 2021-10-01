@@ -1,7 +1,4 @@
 <div class="card-body" style="max-width: 100%;">
-  <script type="text/javascript">
-    alert('No se encontro el taller');
-  </script>
   <div class="row g-0">
     <section class="container mt-5">
       <div class="row d-flex justify-content-left">
