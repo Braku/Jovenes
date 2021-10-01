@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-10-2021 a las 11:39:50
+-- Tiempo de generación: 01-10-2021 a las 11:40:46
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 7.3.31
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `re_jovenes`
 --
-CREATE DATABASE IF NOT EXISTS `re_jovenes` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `re_jovenes`;
 
 -- --------------------------------------------------------
 
