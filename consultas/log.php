@@ -1,34 +1,26 @@
 <?php
 
-    include_once 'conexion.php';
+    include_once '../database.php';
 
-     session_start();
 
-    if(isset($_GET['cerrar_sesion'])){
-        session_unset();
+    if(isset($_SESSION['rol'])){
+      switch($_SESSION['rol']){
+        case 1:
+          header('location: ../indexA.php');
+        break;
 
-        // destroy the session
-        session_destroy();
-    }
+        case 2:
+          header('location: ../indexA.php');
+        break;
 
-    if(isset($_SESSION['id_rol'])){
-        switch($_SESSION['id_rol']){
-            case 1:
-                header('location: ../indexA.php');
-            break;
+        case 3:
+          header('location: ../indexU.php');
+        break;
 
-            case 2:
-              header('location: ../indexA.php');
-            break;
-
-            case 3:
-              header('location: ../indexU.php');
-            break;
-
-            default:
-              header('location: ../index.php');
-            break;
-        }
+        default:
+          header('location: ../index.php');
+        break;
+      }
     }
 
     if(isset($_POST['username']) && isset($_POST['password'])){
@@ -36,22 +28,22 @@
         $contra = $_POST['password'];
 
         $db = new Database();
-        $query = $db->connect()->prepare('SELECT *FROM usuarios WHERE usuario = :user AND contra = :passw');
-        $query->execute(['user' => $usuario, 'passw' => $contra]);
+        $query = $db->connect()->prepare('SELECT * FROM usuarios WHERE correo = :username AND contra = :password');
+        $query->execute(['username' => $usuario, 'password' => $contra]);
 
         $row = $query->fetch(PDO::FETCH_NUM);
 
         if($row == true){
-            $rol = $row[4];
+            $rol = $row[7];
 
-            $_SESSION['id_rol'] = $rol;
+            $_SESSION['rol'] = $rol;
             switch($rol){
               case 1:
                   header('location: ../indexA.php');
               break;
 
               case 2:
-                header('location: ../indexC.php');
+                header('location: ../indexA.php');
               break;
 
               case 3:
@@ -62,9 +54,14 @@
                 header('location ../index.php');
               break;
             }
-        }else{
+        } else{
             // no existe el usuario
-            echo "Nombre de usuario o contraseña incorrecto";
+            echo('
+              <script type="text/javascript">
+                alert("No se encontro el usuario");
+                location.href = "../login.php";
+              </script>
+            ');
         }
 
 

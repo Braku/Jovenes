@@ -1,3 +1,20 @@
+<?php
+ if(isset($_GET['cerrar_sesion']))  {
+        session_unset($_SESSION['rol']);
+
+  }
+
+  if(!isset($_SESSION['rol'])){
+    // header('location: login.php');
+  }else{
+    if($_SESSION['rol'] == 3){
+      header('location: indexU.php');
+    } else {
+      header('location: indexU.php');
+    }
+  }
+
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -14,18 +31,23 @@
 					  </div>
 				  </div>
 				  <div class="d-flex justify-content-center form_container">
-  					<form>
+  					<form action="consultas/log.php" method="post">
+              <?php
+                if(isset($errorLogin)){
+                    echo $errorLogin;
+                }
+              ?>
   						<div class="form-group input-group">
   							<div class="input-group-prepend">
   								<span class="input-group-text"><i class="fas fa-user"></i></span>
   							</div>
-  							<input type="text" name="" class="form-control input_user" value="" placeholder="Usuario">
+  							<input type="text" name="username" class="form-control input_user" value="" placeholder="Usuario">
   						</div>
   						<div class="form-group input-group">
   							<div class="input-group-prepend">
   								<span class="input-group-text"><i class="fas fa-key"></i></span>
   							</div>
-  							<input type="password" name="" class="form-control input_pass" value="" placeholder="Contraseña">
+  							<input type="password" name="password" class="form-control input_pass" value="" placeholder="Contraseña">
   						</div>
   						<div class="form-group">
   							<div class="custom-control custom-checkbox">

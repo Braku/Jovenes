@@ -9,21 +9,19 @@
     //Ciclo que imprime los comentarios en la tabla
     while($datos = $res->fetch_array(MYSQLI_BOTH))
     {
-      $res_banner = $conexion->query("SELECT * FROM img_dtaller WHERE id_taller = ". $_GET['id']);
-      $datos_img = $res_banner->fetch_array();
+      $res_flyer = $conexion->query("SELECT * FROM img_dtaller WHERE id_taller = ". $_GET['id']);
+      $datos_img = $res_flyer->fetch_array();
 
       echo('
       <div class="card-body">
         <div class="">
           <div class="">
-            <img src="'.$datos1['dir_img'].'" style="height: 300px; width: 250px; padding: 0 20px;" class="box-banner float-start" alt="'.$datos1['nom_img'].'">
+            <img src="'.$datos_img['dir_img'].'" style="height: 300px; width: 250px; padding: 0 20px;" class="box-banner float-start" alt="'.$datos_img['nom_img'].'">
           </div>
-          <div class="placeholder-glow">
-            <h4 class="card-title">
-              <span class="placeholder col-3 placeholder"></span>
-            </h4>
-            <div class=" placeholder-glow card-body">
-              <p>'.$datos['nom_taller'].'</p>
+          <div class="">
+            <h4 class="card-title">'.$datos['nom_taller'].'</h4>
+            <div class="card-body">
+              <p>'.$datos['resumen_taller'].'</p>
             </div>
           </div>
         </div>
