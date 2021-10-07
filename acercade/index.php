@@ -73,29 +73,46 @@
             <div class="carousel-inner">
 
               <?php
-                include_once '../consultas/conexion.php';
-
-                $res = $conexion->query("SELECT * FROM usuarios WHERE id_rol = 1 && 2");
-
-                while($datos = $res->fetch_array(MYSQLI_BOTH)) {
-                  for ($i=0; $i < 3; $i++) {
-                    if ($i == 0) {
-                      echo ('
+                // include_once '../consultas/conexion.php';
+                //
+                //
+                // if (!$conexion) {
+                //   die('error en la conexion con la base de datos');
+                // } else {
+                //
+                //   $res = $conexion->query("SELECT * FROM usuarios WHERE id_rol = 1");
+                //
+                //
+                //   while($datos = $res->fetch_array(MYSQLI_BOTH)) {
+                //     // echo ($datos['usuario']);
+                //   }
+                //
+                //   $filas = $res->fetch_array();
+                //
+                //   if($filas == 0);
+                //   else {
+                for ($i=1; $i <= 3; $i++) {
+                  if ($i == 1) {
+                    echo('
                       <div class="carousel-item active">
                         <div class="row text-center" style="margin: 0;">
-                      ');
-                    } else {
-                      echo ('
+                    ');
+                  }else {
+                    echo('
                       <div class="carousel-item">
                         <div class="row text-center" style="margin: 0;">
-                      ');
-                    }
-                        echo ('
+                    ');
+                  }
+
+                  //
+                  if ($i == 1) {
+                    for ($j=1; $j <= 3; $j++) {
+                      echo('
                         <div class="box-user col" style="padding: 3%;">
-                          <button type="button" data-bs-toggle="collapse" style="border: 0px; border-radius: 125px;" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">
+                          <button type="button" data-bs-toggle="collapse" style="border: 0px; border-radius: 125px;" data-bs-target="#multiCollapseExample'.$j.'" aria-expanded="false" aria-controls="multiCollapseExample'.$j.'">
                             <img src="../assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
                           </button>
-                          <div class="collapse multi-collapse" id="multiCollapseExample1">
+                          <div class="collapse multi-collapse" id="multiCollapseExample'.$j.'">
                             <div class="text-center placeholder-glow card card-body">
                               <h5>
                                 <span class="placeholder col-8 placeholder"></span>
@@ -109,60 +126,43 @@
                             </div>
                           </div>
                         </div>
-                        ');
-
-                    echo ('
-                      </div>
-                    </div>
-                    ');
-                  }
-                }
-
-                if($datos > 0);
-                else {
-                  for ($i=1; $i <= 3; $i++) {
-                    if ($i == 1) {
-                      echo ('
-                      <div class="carousel-item active">
-                        <div class="row text-center" style="margin: 0;">
-                      ');
-                    } else {
-                      echo ('
-                      <div class="carousel-item">
-                        <div class="row text-center" style="margin: 0;">
                       ');
                     }
-
-                    for ($j=1; $j <= 3; $j++) {
-
-                      echo ('
-                      <div class="box-user col" style="padding: 3%;">
-                        <button type="button" data-bs-toggle="collapse" style="border: 0px; border-radius: 125px;" data-bs-target="#multiCollapseExample" aria-expanded="false" aria-controls="multiCollapseExample">
-                          <img src="../assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
-                        </button>
-                        <div class="collapse multi-collapse" id="multiCollapseExample">
-                          <div class="text-center placeholder-glow card card-body">
-                            <h5>
-                              <span class="placeholder col-8 placeholder"></span>
-                            </h5>
-                            <p class="">
-                              <span class="placeholder col-7 placeholder-s"></span>
-                              <span class="placeholder col-6 placeholder-s"></span>
-                              <span class="placeholder col-4 placeholder-s"></span>
-                              <span class="placeholder col-4 placeholder-s"></span>
-                            </p>
+                  }else {
+                    for ($j=$i*1.5; $j <= $i*3; $j++) {
+                      echo('
+                        <div class="box-user col" style="padding: 3%;">
+                          <button type="button" data-bs-toggle="collapse" style="border: 0px; border-radius: 125px;" data-bs-target="#multiCollapseExample'.$j.'" aria-expanded="false" aria-controls="multiCollapseExample'.$j.'">
+                            <img src="../assets/img/placeholder_m.png" style="height: 250px; width: 250px; border-radius: 125px;"  alt="" class="mx-auto d-block">
+                          </button>
+                          <div class="collapse multi-collapse" id="multiCollapseExample'.$j.'">
+                            <div class="text-center placeholder-glow card card-body">
+                              <h5>
+                                <span class="placeholder col-8 placeholder"></span>
+                              </h5>
+                              <p class="">
+                                <span class="placeholder col-7 placeholder-s"></span>
+                                <span class="placeholder col-6 placeholder-s"></span>
+                                <span class="placeholder col-4 placeholder-s"></span>
+                                <span class="placeholder col-4 placeholder-s"></span>
+                              </p>
+                            </div>
                           </div>
                         </div>
-                      </div>
                       ');
                     }
-                    echo ('
+                  }
+
+                  echo('
                       </div>
                     </div>
-                    ');
-                  }
+                  ');
+                  echo('
+                    <div class="carousel-item">
+                      <div class="row text-center" style="margin: 0;">
+                  ');
                 }
-
+                // }
 
                ?>
 

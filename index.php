@@ -33,6 +33,12 @@
     </header>
     <div class="container" style="height: 100%; padding: 0;">
       <section class="card float-start" style="width: 73%; height: 100%; border-radius: 0; margin-bottom: 10%;">
+        <div class="card-body">
+          <form class="" action="anunciar.php" method="post">
+            <textarea class="form-control" id="" rows="3" placeholder="Ingresa un anuncio"></textarea>
+            <button type="submit" class="btn btn-primary float-end" style="border: 0; background-color: #3D8C6C; margin: 10px 0; border-radius: 50px 0; padding: 5px 20px;">Publicar</button>
+          </form>
+        </div>
         <?php include_once 'includes/anuncios.php'; ?>
       </section>
 

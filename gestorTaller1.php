@@ -70,16 +70,16 @@
                   <div class="modal-body">
                     <form class="" action="agregar_taller.php" method="post">
                       <label for="nom_taller">Taller:</label>
-                      <input id="nom_taller" class="form-control form-control-lg" type="text" placeholder="Nombre de taller" aria-label=".form-control-lg example">
+                      <input name="nom_taller" id="nom_taller" class="form-control form-control-lg" type="text" placeholder="Nombre de taller" aria-label=".form-control-lg example">
                       <label for="desc_taller" class="form-label">Descripci&oacute;n del taller:</label>
-                      <textarea class="form-control" id="desc_taller" rows="3" placeholder="Descripci&oacute;n"></textarea>
+                      <textarea name="" class="form-control" id="desc_taller" rows="3" placeholder="Descripci&oacute;n"></textarea>
                       <div class="mb-3">
                         <label for="formFile" class="form-label">Selecciona la imagen del banner:</label>
-                        <input class="form-control" type="file" id="img_banner">
+                        <input name="" class="form-control" type="file" id="img_banner">
                       </div>
                       <div class="mb-3">
                         <label for="formFile" class="form-label">Selecciona la imagen del flyer:</label>
-                        <input class="form-control" type="file" id="img_flyer">
+                        <input name="" class="form-control" type="file" id="img_flyer">
                       </div>
                     </form>
                   </div>
@@ -100,21 +100,21 @@
                     <form class="" action="agregar_taller.php" method="post">
                       <div class="mb-3">
                         <label for="formFile" class="form-label">Selecciona una imagen sobre el taller:</label>
-                        <input class="form-control" type="file" id="img_dtaller">
+                        <input class="form-control" type="file" name="img_dtaller" id="img_dtaller">
                         <label for="desc_taller" class="form-label">Frase:</label>
-                        <textarea class="form-control" id="frase" rows="3" placeholder="Frase para pie de imagen"></textarea>
+                        <textarea class="form-control" name="frase" id="frase" rows="3" placeholder="Frase para pie de imagen"></textarea>
                       </div>
                       <div class="mb-3">
                         <label for="formFile" class="form-label">Selecciona la imagen sobre el taller:</label>
-                        <input class="form-control" type="file" id="img_dtaller1">
+                        <input class="form-control" type="file" name="img_dtaller1" id="img_dtaller1">
                         <label for="desc_taller" class="form-label">Frase:</label>
-                        <textarea class="form-control" id="frase1" rows="3" placeholder="Frase para pie de imagen"></textarea>
+                        <textarea class="form-control" name="frase1" id="frase1" rows="3" placeholder="Frase para pie de imagen"></textarea>
                       </div>
                       <div class="mb-3">
                         <label for="formFile" class="form-label">Selecciona la imagen sobre el taller:</label>
-                        <input class="form-control" type="file" id="img_dtaller2">
+                        <input class="form-control" type="file" name="img_dtaller2" id="img_dtaller2">
                         <label for="desc_taller" class="form-label">Frase:</label>
-                        <textarea class="form-control" id="frase2" rows="3" placeholder="Frase para pie de imagen"></textarea>
+                        <textarea class="form-control" name="frase2" id="frase2" rows="3" placeholder="Frase para pie de imagen"></textarea>
                       </div>
                   </div>
                   <div class="modal-footer">
